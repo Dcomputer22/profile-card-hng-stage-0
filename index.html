@@ -8,6 +8,14 @@
   </head>
   <body>
     <article class="profile-card-w" data-testid="test-profile-card">
+      <nav class="nav-bar" data-testid="test-user-nav-bar">
+        <ul>
+          <li><a href="./index.html">My Profile</a></li>
+          <li><a href="./stage-one/about.html">About Me</a></li>
+          <li><a href="./stage-one/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
       <section class="user-info-top">
         <section>
           <h2 data-testid="test-user-name">Fatima Oyiza Jimoh</h2>
@@ -15,8 +23,10 @@
             I'm a passionate front-end developer, A First class graduate of
             Computer Science from Kogi State University, Nigeria. My goal is to
             become a full-stack developer and help make a positive impact to the
-            world.
+            world. I'm currently undergoing the HNG13 internship program to
+            sharpen my skills, collaborate with teams and grow as a developer.
           </p>
+          <span>Time in milliseconds: </span>
           <time data-testid="test-user-time" id="time"></time>
         </section>
 
@@ -31,7 +41,7 @@
 
       <section class="user-info-bottom">
         <section>
-          <h3>Social Links</h3>
+          <h3>Connect</h3>
           <ul class="social-links" data-testid="test-user-social-links">
             <li data-testid="test-user-social-linkedin">
               <a

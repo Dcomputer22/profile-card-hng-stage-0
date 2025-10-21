@@ -6,12 +6,26 @@ body {
 }
 
 .profile-card-w {
-  max-width: 800px;
-  min-height: 400px;
-  box-shadow: 1px 2px 2px 2px rgba(2, 75, 2, 0.5);
+  max-width: 900px;
+  min-height: 450px;
+  box-shadow: 1px 2px 2px 2px #024b0280;
   margin: auto;
-  border-radius: 10px;
-  padding-right: 20px;
+  border-radius: 15px;
+}
+
+.profile-card-w .nav-bar ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  gap: 40px;
+}
+
+.profile-card-w .nav-bar ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #56ab2f;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #ffffff, #024b02) 1;
 }
 
 .profile-card-w .user-info-top {
@@ -19,10 +33,12 @@ body {
   flex-direction: row-reverse;
   text-align: justify;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to left, #024b02, #56ab2f);
+  color: #ffffff;
+  padding-right: 20px;
 }
 
 .profile-card-w .user-info-top h2 {
-  color: rgb(2, 75, 2);
   text-transform: uppercase;
 }
 
@@ -31,7 +47,6 @@ body {
 }
 
 .profile-card-w .user-info-top time {
-  color: rgb(2, 75, 2);
   font-weight: 500;
 }
 
@@ -50,15 +65,23 @@ body {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
+  color: #024b02;
 }
 
 .profile-card-w .user-info-bottom section h3 {
   text-align: center;
-  color: rgb(2, 75, 2);
+  color: #024b02;
 }
 
-.profile-card-w .user-info-bottom ul:not(.social-links) {
-  list-style-type: circle;
+.profile-card-w .user-info-bottom ul {
+  list-style-type: none;
+}
+
+.profile-card-w .user-info-bottom ul:not(.social-links) li {
+  box-shadow: 1px 2px 2px 2px #024b0280;
+  padding: 3px 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
 }
 
 .profile-card-w .user-info-bottom .social-links {
@@ -75,7 +98,7 @@ body {
 
 @media screen and (max-width: 960px) {
   .profile-card-w {
-    max-width: 550px;
+    max-width: 600px;
   }
 
   .profile-card-w .user-info-top p {
@@ -90,11 +113,11 @@ body {
 @media screen and (max-width: 500px) {
   .profile-card-w {
     max-width: 300px;
-    padding: 15px;
   }
 
   .profile-card-w .user-info-top {
     flex-direction: column-reverse;
+    padding-left: 10px;
   }
 
   .profile-card-w .user-info-top .avatar-container {
@@ -104,6 +127,7 @@ body {
   .profile-card-w .user-info-bottom {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10px;
   }
 
   .profile-card-w .user-info-bottom section ul {
@@ -114,7 +138,7 @@ body {
   .profile-card-w .user-info-bottom section ul li {
     display: inline-block;
     margin-right: 1rem;
-    list-style-position: outside;
-    vertical-align: middle;
+    justify-self: center;
+    font-size: 12px;
   }
 }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <main data-testid="test-contact-page" class="contact-container">
+      <nav class="nav-bar" data-testid="test-user-nav-bar">
+        <ul>
+          <li><a href="../index.html">My Profile</a></li>
+          <li><a href="./about.html">About Me</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <form id="contactForm" class="contact-form">
+        <label for="name">Full name</label>
+        <input
+          data-testid="test-contact-name"
+          type="text"
+          name="name"
+          id="name"
+          required
+          aria-describedby="err-name"
+        />
+        <span
+          id="err-name"
+          data-testid="test-contact-error-name"
+          role="alert"
+          style="display: none"
+        ></span>
+
+        <label for="email">Email</label>
+        <input
+          data-testid="test-contact-email"
+          type="email"
+          name="email"
+          id="email"
+          required
+          aria-describedby="err-email"
+        />
+        <span
+          id="err-email"
+          data-testid="test-contact-error-email"
+          role="alert"
+          style="display: none"
+        ></span>
+
+        <label for="subject">Subject</label>
+        <input
+          data-testid="test-contact-subject"
+          type="text"
+          name="name"
+          id="name"
+          required
+          aria-describedby="err-subject"
+        />
+        <span
+          id="err-subject"
+          data-testid="test-contact-error-subject"
+          role="alert"
+          style="display: none"
+        ></span>
+
+        <label for="message">Message</label>
+        <textarea
+          name="message"
+          id="message"
+          data-testid="test-contact-message"
+          required
+          minlength="10"
+          aria-describedby="err-message"
+        ></textarea>
+        <span
+          id="err-message"
+          data-testid="test-contact-error-message"
+          role="alert"
+          style="display: none"
+        ></span>
+
+        <button type="submit" data-testid="test-contact-submit">
+          Send Message
+        </button>
+
+        <section
+          id="success"
+          data-testid="test-contact-success"
+          role="status"
+          style="display: none"
+        >
+          Your message was successfully sent - Thank you.
+        </section>
+      </form>
+    </main>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
