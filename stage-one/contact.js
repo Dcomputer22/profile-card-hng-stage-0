@@ -19,7 +19,7 @@ form.addEventListener('submit', (event) => {
   showError('err-name', name ? '' : 'Name is required.');
   showError(
     'err-email',
-    email && /^[^\s@]+s@[^\s@]+\.[^\s@]+$/.test(email)
+    email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
       ? ''
       : 'Valid email is required.'
   );
@@ -29,14 +29,15 @@ form.addEventListener('submit', (event) => {
   success =
     name &&
     email &&
-    /^[^\s@]+s@[^\s@]+\.[^\s@]+$/.test(email) &&
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) &&
     subject &&
     message.length >= 10;
 
   if (success) {
     alert('Form submitted successfully!');
     form.reset();
+    document.getElementById('success').style.display = 'block';
   } else {
-    document.getElementById('success-message').style.display = 'none';
+    document.getElementById('success').style.display = 'none';
   }
 });

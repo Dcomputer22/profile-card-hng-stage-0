@@ -43,3 +43,22 @@ body {
   list-style-type: circle;
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 960px) {
+  .about-container {
+    max-width: 650px;
+  }
+
+  .about-container section {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about-container {
+    max-width: 350px;
+  }
+
+  .about-container section {
+    font-size: 14px;
+  }
+}

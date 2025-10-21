@@ -69,3 +69,12 @@ textarea {
   cursor: pointer;
   align-self: center;
 }
+.contact-container .contact-form .success-message {
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .contact-container {
+    max-width: 350px;
+  }
+}

@@ -53,8 +53,8 @@
         <input
           data-testid="test-contact-subject"
           type="text"
-          name="name"
-          id="name"
+          name="subject"
+          id="subject"
           required
           aria-describedby="err-subject"
         />
@@ -86,10 +86,11 @@
         </button>
 
         <section
+          class="success-message"
           id="success"
           data-testid="test-contact-success"
           role="status"
-          style="display: none"
+          style="display: none; color: #024b02"
         >
           Your message was successfully sent - Thank you.
         </section>
